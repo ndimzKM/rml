@@ -28,6 +28,7 @@ const Header: React.FC = () => {
           <span>Site Encryption</span>
         </p>
       </div>    
+      <a href="#" className="start">Get Started now.</a>
       <p className="rating">
         <HiStar size={15} color="#a5a5a5"/>
         <HiStar size={15} color="#a5a5a5"/>
