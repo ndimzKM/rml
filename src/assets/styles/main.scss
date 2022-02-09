@@ -15,6 +15,7 @@ body{
 
 nav{
   padding: 30px;
+  padding-bottom: 0;
 }
 
 .navbar{
@@ -37,11 +38,11 @@ header{
   align-items: center;
   flex-direction: column;
   img{
-    width: 200px;
+    width: 300px;
   }
   form{
-    margin-top: 25px;
     display: flex;
+    margin-top:25px;
     box-shadow: 1px 1px 2px #dcdcdc;
     align-items: center;
     border: 1px #dcdcdc solid;
@@ -65,6 +66,9 @@ header{
   h1{
     margin-top: 20px;
     letter-spacing: -0.05em;
+    span{
+      color: blue;
+    }
   }
   p.subtitle{
     margin: 10px 0 5px 0;

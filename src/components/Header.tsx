@@ -1,6 +1,6 @@
 import { BiSearch } from 'react-icons/bi'
 import { HiCheckCircle, HiOutlineStar, HiStar } from 'react-icons/hi'
-import logo from '../assets/logo.svg';
+import logo from '../assets/images/hostfamily-12-12.png';
 
 const Header: React.FC = () => {
   return(
@@ -12,7 +12,7 @@ const Header: React.FC = () => {
           <BiSearch size={24} color="#a5a5a5" />
         </button>        
       </form>
-      <h1>Tired of being tracked online? We can help.</h1>
+      <h1>Tired of lecturers <span>'maying'</span> you stress? We can help.</h1>
       <p className="subtitle">Get seamless privacy protection on your browser for free with one download:</p>
       <div className="actions">
         <p>
