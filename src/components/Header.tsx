@@ -1,5 +1,6 @@
 import { BiSearch } from 'react-icons/bi'
 import { HiCheckCircle, HiOutlineStar, HiStar } from 'react-icons/hi'
+import { Link } from 'react-router-dom';
 import logo from '../assets/images/hostfamily-12-12.png';
 
 const Header: React.FC = () => {
@@ -27,8 +28,8 @@ const Header: React.FC = () => {
           <HiCheckCircle size={20} color="blue"/>
           <span>Site Encryption</span>
         </p>
-      </div>    
-      <a href="#" className="start">Get Started now.</a>
+      </div> 
+      <Link to="/search" className="start">Get Started now</Link>
       <p className="rating">
         <HiStar size={15} color="#a5a5a5"/>
         <HiStar size={15} color="#a5a5a5"/>
