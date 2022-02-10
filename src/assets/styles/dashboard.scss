@@ -1,0 +1,123 @@
+@import './partials/functions';
+
+.dashboard {
+  main{
+    @include flexJustify(space-between, none,row);
+  }
+  .dashboard-main{
+    width: calc(100% - 230px);
+    h2{
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: -0.05em;
+    }
+    .dash-details{
+      margin-top:30px;
+      @include flexJustify(space-between,none,row);
+      .professors{
+        width: 60%;
+        padding-right: 50px;
+        h3{
+          font-weight: 700;
+          letter-spacing: -0.05em;
+          font-size: 1.3em;
+        }
+        a{
+          padding: 5px;
+          background-color: lightblue;
+          color: #333;
+          font-size: 0.9em;
+          font-weight: 700;
+          letter-spacing: -0.05em;
+          border-radius: 2px;
+        }
+        .professor-p{
+          @include flexJustify(space-between,center,row);
+          .profile{
+            @include flexJustify(none,center,row);
+            p{
+              font-size: 0.8em;
+            }
+          }
+          span{
+            font-size:1.5em;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+          }
+        }
+      }
+      .dash-summary{
+        width: 40%;
+        h3{
+          font-weight: 700;
+          font-size: 1.3em;
+          letter-spacing:-0.05em;
+        }
+        p.overall{
+          font-size: 0.8em;
+          @include flexJustify(none,center,row);
+          span{
+            font-weight: 700;
+            font-size: 2.3em;
+            padding-right: 10px;
+          }
+        }
+        .allratings{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          gap: 15px;
+          margin-top: 15px;
+          div{
+            @include flexJustify(none,center,row);
+            p{
+              font-size: 0.8em;
+              text-transform: uppercase;
+              @include flexJustify(none,center,row);
+              span{
+                font-weight: 700;
+                font-size: 1.5em;
+                letter-spacing: -0.05em;
+                padding-right: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+   .main{ 
+    width: 230px;
+    height: max-content;
+    background-color: #fcfdfe;
+    border-radius: 5px;
+    padding: 20px;
+    div.item {
+      margin-bottom: 20px;
+      a {
+        div {
+          @include flexJustify(none, center, row);
+          i {
+            font-size: 24px;
+            color: #747475;
+          }
+          span {
+            padding-left: 10px;
+            color: #121212;
+            font-weight: 500;
+            font-size: 13px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+    p {
+      display: block;
+      color: rgba(0, 0, 0, 0.61);
+      font-size: 12px;
+      margin-bottom: 12px;
+      letter-spacing: -0.2px;
+    }
+  }
+  }

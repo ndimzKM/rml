@@ -7,7 +7,7 @@ const Header: React.FC = () => {
   return(
     <header>
       <img src={logo} alt="Logo" />
-      <form className="shadow-lg">
+      <form className="shadow">
         <input type="text" placeholder="Search the web without being tracked" />
         <button type="submit">
           <BiSearch size={24} color="#a5a5a5" />
